@@ -59,7 +59,7 @@ function App() {
             <Nav className='search'>
               <img src="search_logo.svg" alt='logo image' onClick={() => setShowSearch(true)} />
               {showSearch && (
-                <div style={{backgroundColor: 'white',borderColor:'black' ,borderstyle: 'solid',width: 436,height: 90}}>
+                <div id='search-overlay'>
                   <div className="cancel-search" onClick={handleCancelSearch}>X</div>
                   <input type="text" placeholder="Search.." name="search" id='in1' />
                   <Button id='btn1' type='submit'>search</Button>
@@ -94,7 +94,7 @@ function App() {
             <Row style={{ margin: 0, width: '100%', height: 703 }}>
               <Col style={{ backgroundImage: 'url(Img3.jpg)', padding: 0, width: '50%', backgroundSize: 'cover' }}>
                 <div style={{ marginLeft: 220, marginTop: 480, width: "50%", letterSpacing: 1, fontSize: 30, color: 'black', textAlign: 'center' }}>MADE FOR THE BEST CHANGE MAKERS.  </div>
-                <div><Button style={{ borderColor: '#FFDB58', borderWidth: 2, borderStyle: 'solid', backgroundColor: 'black', color: 'white', marginLeft: 330, borderRadius: 50, border: 4, fontSize: '20px', marginTop: 10, width: 180, height: 50 }}>SHOP BRANDS</Button></div>
+                <div><Button style={{backgroundColor: 'black', color: 'white', marginLeft: 330, borderRadius: 50, border: 4, fontSize: '20px', marginTop: 10, width: 180, height: 50,borderColor: '#FFDB58', borderWidth: 2, borderStyle: 'solid' }}>SHOP BRANDS</Button></div>
               </Col>
               <Col style={{ padding: 0, width: '50%' }}><img src='Img4.jpg' style={{ width: '100%', height: '100%', backgroundSize: 'cover' }} /></Col>
             </Row>
@@ -102,7 +102,7 @@ function App() {
               <Col style={{ padding: 0, width: '50%' }}><img src='Img5.png' style={{ width: '100%', height: '100%' }} /></Col>
               <Col style={{ backgroundImage: 'url(Img6.jpg)', backgroundSize: 'cover', padding: 0, width: '50%' }}>
                 <div style={{ marginLeft: 200, marginTop: 500, width: 460, fontFamily: 'Oxygen', fontSize: 36, color: 'white', textAlign: 'center' }}>SAVOUR THE PRESENT.</div>
-                <div><Button style={{ borderColor: '#FFDB58', borderWidth: 2, borderStyle: 'solid', backgroundColor: 'white', color: 'black', marginLeft: 300, borderRadius: 50, border: 4, fontSize: '20px', marginTop: 10, width: 240, height: 60, fontWeight: 'bold' }}>SHOP MONT BLANC</Button></div>
+                <div><Button style={{  backgroundColor: 'white', color: 'black', marginLeft: 300, borderRadius: 50, border: 4, fontSize: '20px', marginTop: 10, width: 240, height: 60, fontWeight: 'bold', borderColor: '#FFDB58', borderWidth: 2, borderStyle: 'solid',  }}>SHOP MONT BLANC</Button></div>
               </Col>
             </Row>
             <Row style={{ margin: 0, width: '100%', height: 703 }}>
@@ -121,7 +121,7 @@ function App() {
                   <span>M</span>
                   <div style={{ marginLeft: 40, width: 249, color: 'white', fontFamily: 'Pridi', textAlign: 'center', height: 100, fontSize: 49 }}>PISTONS</div>
                 </div>
-                <div><Button style={{ borderColor: '#FFDB58', borderWidth: 2, borderStyle: 'solid', backgroundColor: 'white', width: 400, height: 50, color: 'black', marginLeft: 650, marginTop: 0, borderRadius: 50, border: 4, fontSize: 20, fontWeight: 'bold' }}>SHOP THE FALL 2023 COLLECTION</Button></div>
+                <div><Button style={{  backgroundColor: 'white', width: 400, height: 50, color: 'black', marginLeft: 650, marginTop: 0, borderRadius: 50, border: 4, fontSize: 20, fontWeight: 'bold' , borderColor: '#FFDB58', borderWidth: 2, borderStyle: 'solid', }}>SHOP THE FALL 2023 COLLECTION</Button></div>
               </Col>
             </Row>
           </div>
