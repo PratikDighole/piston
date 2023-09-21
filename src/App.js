@@ -59,7 +59,7 @@ function App() {
             <Nav className='search'>
               <img src="search_logo.svg" alt='logo image' onClick={() => setShowSearch(true)} />
               {showSearch && (
-                <div className="search-overlay">
+                <div style={{backgroundColor: 'white',borderColor:'black' ,borderstyle: 'solid',width: 436,height: 90}}>
                   <div className="cancel-search" onClick={handleCancelSearch}>X</div>
                   <input type="text" placeholder="Search.." name="search" id='in1' />
                   <Button id='btn1' type='submit'>search</Button>
