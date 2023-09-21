@@ -16,7 +16,7 @@ function App() {
   const [selectedTask, setSelectedTask] = useState(null);
 
   // Function to fetch tasks from the backend
-  const corsProxyUrl = 'https://elitefit4you.com/test-api/testimonials.json';
+  const corsProxyUrl = 'http://localhost:8080/https://elitefit4you.com/test-api/testimonials.json';
   const fetchTasks = async () => {
     try {
       const response = await axios.get(corsProxyUrl);
