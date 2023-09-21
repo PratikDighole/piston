@@ -1,7 +1,7 @@
 const cors_proxy = require('cors-anywhere');
 
 // Listen on a specific host and port
-const host = 'localhost'; // or any other host you prefer
+const host = '0.0.0.0'; // Listen on all available network interfaces
 const port = 8080; // or any available port
 
 cors_proxy.createServer({
