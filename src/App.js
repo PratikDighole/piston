@@ -51,7 +51,7 @@ function App() {
               <Nav.Link href="#link" id='nl3'>BRAND</Nav.Link>
               <Nav.Link href="#link" id='nl4'>COLLECTIONS</Nav.Link>
               <Nav.Link href="#link" id='nl5'>ACCESSORIES</Nav.Link>
-              <Nav.Link href="#link" id='nl6'>ABOUT</Nav.Link>
+              <Nav.Link href="#card" id='nl6'>ABOUT</Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <Navbar className='nb1'>
@@ -129,7 +129,7 @@ function App() {
         </div>
         <div >
           <div style={{ margin: 0, padding: 0 }}>
-            <Row style={{ margin: 0 }}>
+            <Row id='card' style={{ margin: 0 }}>
               <Col style={{ padding: 0, marginTop: 192, marginLeft: 152 }}>
                 <Carousel slide={true} style={{ width: 667, height: 550 }}>
                   <Carousel.Item>
