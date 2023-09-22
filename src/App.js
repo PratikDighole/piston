@@ -65,6 +65,7 @@ function App() {
                   <Button id='btn1' type='submit'>search</Button>
                 </div>
               )}
+
             </Nav>
           </Navbar>
         </Navbar>
@@ -157,7 +158,7 @@ function App() {
               <Col ><h1 style={{ marginLeft: 600, width: 342, height: 65, fontSize: 50, letterSpacing: 5 }}>TESTIMONIALS</h1></Col>
             </Row>
             <Row style={{ margin: 0, width: '100%', alignContent: 'center', marginTop: 152, display: 'inline' }}>
-              <TestimonialList Testimonials={tasks} />
+              <div style={{marginLeft:60}}><TestimonialList Testimonials={tasks} /></div>
             </Row>
           </div>
         </div>
