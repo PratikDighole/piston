@@ -1,24 +1,29 @@
-
-
 import React from 'react';
+import {Row,Col, Card} from 'react-bootstrap';
+import '../App.css';
 
 const TestimonialList = ({ Testimonials }) => {
   return (
-    <div>
-      <div style={{ margin:0,width:'100%',alignContent:'center',display: 'flex',flexDirection: 'row', flexWrap: 'nowrap' ,marginTop:92}}>
-        {Testimonials.map((testimonial) => (
-          <div className='cl10 testimonial-col' style={{ backgroundImage: `url(${testimonial.image})`,backgroundSize:'cover', padding: 0, width: 300, height: 300, borderRadius: 15,margin:40 }}>
-            <div style={{ fontWeight: 'bold', fontSize: 40,marginTop:130, color: 'white', textAlign: 'center' }}>{testimonial.name}</div>
-            <div className="testimonial-overlay">
-          <div className="testimonial-info">
-            <p>{testimonial.message}</p>
-          </div>
+    <div id='dv7'>
+  {Testimonials.map((testimonial, index) => (
+      <Col
+      key={index}
+      xs={12}
+      sm={6}
+      md={3}
+      className='cl10 testimonial-col'
+      style={{ backgroundImage: `url(${testimonial.image})` }}>
+    <div className='testimonial-name'>{testimonial.name}</div>
+      <div className="testimonial-overlay">
+        <div className="testimonial-info">
+          <p>{testimonial.message}</p>
         </div>
       </div>
-        ))}
-      </div>
+    </Col>
+  ))}
     </div>
   );
 };
 
 export default TestimonialList;
+
